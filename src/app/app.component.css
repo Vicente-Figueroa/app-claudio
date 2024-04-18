@@ -1,0 +1,11 @@
+.app-container {
+  background-color: #202020;
+  min-height: 80vh;
+  display: flex;
+  flex-direction: row;
+  overflow: hidden;
+}
+
+.content {
+  flex: 1;
+}
