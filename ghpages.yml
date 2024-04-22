@@ -1,0 +1,5 @@
+deploy:
+  type: ghpages
+  repo: <vicente-figueroa>/<portfolio>
+  branch: gh-pages
+  dir: dist/app-claudio

@@ -1,12 +1,17 @@
 <div class="carousel-container">
+    <ngx-slick-carousel class="carousel" 
+      #slickModal="slick-carousel" 
+      [config]="slideConfig" >
+      @for (slide of slides; track slide.img) {
+        <div ngxSlickItem class="slide">
+          <a [href]="slide.link" target="_blank">
+            <img src="{{ slide.img }}" alt="" >
+            <div class="title-container">
+            <h2>{{ slide.title }}</h2>
 
-<ngx-slick-carousel class="carousel" 
-#slickModal="slick-carousel" 
-[config]="slideConfig" >
-@for (slide of slides; track slide.img) {
-<div ngxSlickItem class="slide">
-<img src="{{ slide.img }}" alt="" >
-</div>
-}
-</ngx-slick-carousel>
-</div>
+            </div>
+          </a>
+        </div>
+      }
+    </ngx-slick-carousel>
+  </div>

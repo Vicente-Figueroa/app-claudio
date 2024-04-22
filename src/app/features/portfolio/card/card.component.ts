@@ -11,15 +11,17 @@ import { SlickCarouselModule } from 'ngx-slick-carousel';
   styleUrl: './card.component.css',
 })
 export class CardComponent { slides = [
-  {img: "../../../assets/portfolio/proyecto_1.jpg" },
-  {img: "../../../assets/portfolio/proyecto_2.jpg"},
-  {img: "../../../assets/portfolio/proyecto_3.jpg"},
-  {img: "../../../assets/portfolio/proyecto_4.jpg"},
-  {img: "../../../assets/portfolio/proyecto_5.jpeg"},
+  { img: "../../../assets/portfolio/proyecto_1.jpg", link: "https://example.com/proyecto-1", title: "Academia de deep learning Bns Aires" },
+  { img: "../../../assets/portfolio/proyecto_2.jpg", link: "https://example.com/proyecto-2", title: "Plataforma de servicios Freelance" },
+  { img: "../../../assets/portfolio/proyecto_3.jpg", link: "https://example.com/proyecto-3", title: "Sistema de Gestión Contable moderno" },
+  { img: "../../../assets/portfolio/proyecto_4.jpg", link: "https://example.com/proyecto-4", title: "Premio nominacion Defontana" },
+  { img: "../../../assets/portfolio/proyecto_5.jpeg", link: "https://example.com/proyecto-5", title: "Proyectos personales" }
 ];
 slideConfig = {"slidesToShow": 1, "slidesToScroll": 1,
  "lazyLoad": true,
  "infinite": true,
+ "autoplay":true,
+ "autoplayspeed":3000,
 
 };
 

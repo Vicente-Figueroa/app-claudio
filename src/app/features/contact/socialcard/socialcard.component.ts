@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+
 
 @Component({
   selector: 'app-socialcard',
@@ -8,5 +9,7 @@ import { Component } from '@angular/core';
   styleUrl: './socialcard.component.css'
 })
 export class SocialcardComponent {
-
+  @Input() src :string = "";
+  @Input() name :string = "";
+  @Input() link :string = "";
 }

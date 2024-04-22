@@ -24,7 +24,7 @@
     font-weight: bold; /* Fuente negrita */
   }
   
-  .social-link button {
+  .social-link a {
     background-color: #ff990073; /* Color del botón */
     color: #fff; /* Color del texto en el botón */
     border: none;
@@ -32,6 +32,9 @@
     cursor: pointer; /* Cursor que indica que es un enlace */
     margin-left: 10px;
     margin-top: -5px;
+    position: absolute; /* Posiciona el enlace de forma absoluta */
+    right: 10%; /* Ubica el enlace a la derecha del contenedor */
+  
   }
   
   .social-link button:hover {

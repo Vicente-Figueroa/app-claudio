@@ -22,9 +22,25 @@
 
 ::ng-deep .slide img {
   /* Set exact dimensions for consistent sizing */
-  width: 50vw;
-  height: 50vh;
+  width:280px;
+  height: 280px;
   object-fit: cover;
   /* Use margin instead of padding for clearer spacing */
-  margin: 10px;
+  margin: 20px;
+}
+.title-container{
+display: flex;
+justify-content: center;
+}
+h2 {
+  /* Estilos para el título de cada slide */
+
+  font-size: 14px;
+  font-weight: bold;
+  color: #fff;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 10px;
+
+  border-radius: 10px;
 }
