@@ -1,0 +1,12 @@
+<div class="carousel-container">
+
+<ngx-slick-carousel class="carousel" 
+#slickModal="slick-carousel" 
+[config]="slideConfig" >
+@for (slide of slides; track slide.img) {
+<div ngxSlickItem class="slide">
+<img src="{{ slide.img }}" alt="" >
+</div>
+}
+</ngx-slick-carousel>
+</div>

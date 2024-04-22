@@ -152,3 +152,20 @@
   font-size: 0.8rem; /* Adjust font size as needed */
   color: #fff; /* Light grayish blue color (same as your .text2) */
 }
+/* Media query para pantallas grandes */
+@media only screen and (min-width: 1024px) {
+  .about-me-content,
+  .about-me-container{
+    width: 700px; /* Establece el ancho mínimo del 80% de la pantalla */
+    max-width: none; /* Elimina el límite máximo de ancho */
+    margin: 0 auto; /* Centra el contenedor horizontalmente */
+
+  }
+
+  .about-me{
+    font-size: initial;
+    font-size: 21px !important; /* Aumentar el tamaño del texto en pantallas grandes de forma forzosa */
+    margin-right: 50px;
+  margin-left: -100px;
+  }
+}

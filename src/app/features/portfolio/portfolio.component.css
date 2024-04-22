@@ -1,0 +1,147 @@
+/* Estilos para el contenedor principal del portafolio */
+.portfolio-container {
+  font-family: "Roboto", sans-serif; /* Utiliza la fuente Roboto como predeterminada */
+  justify-content: center; /* Centra horizontalmente los elementos secundarios */
+  overflow: hidden; /* Oculta el contenido que excede el tamaño del contenedor */
+  align-items: top; /* Alinea los elementos secundarios en la parte superior */
+  min-height: 80vh; /* Establece la altura mínima del contenedor al 80% del viewport height */
+  max-height: 100vh; /* Establece la altura máxima del contenedor al 100% del viewport height */
+  width: 95vw;
+}
+
+/* Estilos para el efecto de fondo */
+.portfolio-container:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  background-image: radial-gradient(
+      circle,
+      rgba(255, 255, 255, 0.3) 1px,
+      transparent 1px
+  ); /* Crea un efecto de fondo con un degradado radial */
+  background-size: 30px 30px; /* Tamaño del patrón del degradado */
+  animation: graph-animation 30s linear infinite; /* Animación del degradado */
+}
+
+/* Animación del degradado */
+@keyframes graph-animation {
+  0% {
+      background-position: 0 0; /* Posición inicial del degradado */
+  }
+  100% {
+      background-position: 100% 100%; /* Posición final del degradado */
+  }
+}
+
+/* Estilos para el contenido del portafolio */
+.portfolio-content {
+  max-width: 600px; /* Establece el ancho máximo del contenido */
+  text-align: center; /* Centra el texto horizontalmente */
+  padding: 10px; /* Añade relleno alrededor del contenido */
+  background-color: rgba(255, 153, 0, 0.3); /* Establece el color de fondo con transparencia */
+  backdrop-filter: blur(2px); /* Aplica un efecto de desenfoque al fondo */
+  border-radius: 8px; /* Añade bordes redondeados al contenedor */
+}
+
+/* Estilos para el contenedor del título del portafolio */
+.portfolio-title-container {
+  display: flex; /* Muestra los elementos en línea */
+  justify-content: flex-start; /* Alinea el contenido a la izquierda */
+  margin-bottom: 20px; /* Margen inferior */
+}
+
+/* Estilos para el cuadro del título del portafolio */
+.portfolio-title-box {
+  background-color: #ffffffa9; /* Color de fondo con transparencia */
+  padding: 10px 20px; /* Añade relleno alrededor del título */
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* Añade una sombra al cuadro */
+  border-radius: 3px; /* Añade bordes redondeados al cuadro */
+  margin-left: -10px; /* Margen izquierdo */
+}
+
+/* Estilos para el título del portafolio */
+.portfolio-title {
+  font-family: "Roboto", sans-serif; /* Utiliza la fuente Roboto como predeterminada */
+  font-size: 30px; /* Tamaño de la fuente */
+  font-weight: 300; /* Grosor de la fuente */
+  color: #202020c0; /* Color del texto */
+  margin: -5px; /* Margen */
+}
+
+/* Estilos para el cuerpo del portafolio */
+.portfolio-info {
+  display: flex; /* Muestra los elementos en línea */
+  justify-content: center; /* Centra horizontalmente */
+  position: relative; /* Posición relativa */
+}
+
+/* Estilos para el marco del portafolio */
+.portfolio-frame-info {
+  background-color: #202020c0; /* Color de fondo con transparencia */
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* Añade una sombra al marco */
+  border-radius: 8px; /* Añade bordes redondeados al marco */
+  max-width: 400px; /* Ancho máximo del marco */
+  margin: -10px;
+  padding-right: 10px;
+  padding-left: 10px;
+  margin-bottom: 10px;
+}
+
+/* Estilos para el contenido del portafolio */
+.portfolio-text {
+  margin-top: 5px;
+  font-family: "Merriweather", serif; /* Utiliza la fuente Merriweather como predeterminada */
+  font-size: 17px; /* Tamaño de la fuente */
+  line-height: 1.6; /* Altura de línea */
+  color: #fff; /* Color del texto */
+  text-align: justify; /* Justifica el texto */
+}
+
+/* Estilos para resaltar texto */
+.highlight {
+  color: #fdc1c1; /* Color de resaltado */
+}
+
+/* Animación de fade-in */
+.fade-in {
+  animation: fade-in 2s ease-in-out; /* Animación de fade-in */
+}
+
+/* Animación de fade-in */
+@keyframes fade-in {
+  0% {
+      opacity: 0; /* Opacidad inicial */
+  }
+  100% {
+      opacity: 1; /* Opacidad final */
+  }
+}
+
+/* Estilos para el pie de página */
+.footer {
+  text-align: center; /* Centra el contenido horizontalmente */
+  padding: 1rem 0; /* Añade relleno superior e inferior */
+  font-size: 0.8rem; /* Tamaño de la fuente */
+  color: #fff; /* Color del texto */
+}
+
+/* Media query para pantallas grandes */
+@media only screen and (min-width: 1024px) {
+  .portfolio-content,
+  .portfolio-container{
+      width: 700px; /* Establece el ancho mínimo del 80% de la pantalla */
+      max-width: none; /* Elimina el límite máximo de ancho */
+      margin: 0 auto; /* Centra el contenedor horizontalmente */
+  }
+
+  .portfolio {
+      font-size: initial; /* Reinicia el tamaño de la fuente */
+      font-size: 21px !important; /* Aumenta el tamaño del texto en pantallas grandes */
+      margin-right: 50px; /* Margen derecho */
+      margin-left: -100px; /* Margen izquierdo */
+  }
+}
