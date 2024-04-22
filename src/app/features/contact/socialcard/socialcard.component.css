@@ -1,0 +1,58 @@
+
+.social-content{
+  text-align: center;
+  padding: 10px;
+  border-radius: 8px;
+}
+.social-link {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    background-color: #f8de7e32; /* Color de fondo */
+    border-radius: 8px; /* Redondea las esquinas */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    
+  }
+
+  .social-link img {
+    margin-right: 10px;
+    border-radius: 50%; /* Redondea el logotipo de GitHub */
+  }
+  
+  .social-link span {
+    font-size: 16px; /* Tamaño de la fuente para "GitHub" */
+    font-weight: bold; /* Fuente negrita */
+  }
+  
+  .social-link button {
+    background-color: #ff990073; /* Color del botón */
+    color: #fff; /* Color del texto en el botón */
+    border: none;
+    font-size: 16px; /* Tamaño de la fuente para el botón */
+    cursor: pointer; /* Cursor que indica que es un enlace */
+    margin-left: 10px;
+    margin-top: -5px;
+  }
+  
+  .social-link button:hover {
+    background-color: #ff990073; /* Color del botón al hover */
+  }
+
+  .cta-button {
+    display: inline-block;
+    background-color: #ff990073;
+    color: #fff;
+    font-weight: 300;
+    padding: 10px 24px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .cta-button:hover {
+    background-color: #ffffffa9;
+    color: #202020c0;
+  }

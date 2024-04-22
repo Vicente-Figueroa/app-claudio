@@ -3,13 +3,6 @@ import { CommonModule } from '@angular/common';
 import { Component, OnInit  } from '@angular/core';
 import { SlickCarouselModule } from 'ngx-slick-carousel';
 
-interface Slide {
-  img: string;
-  title: string;
-  description: string;
-  link: string; // Added link property for image
-}
-
 @Component({
   selector: 'app-card',
   standalone: true,
@@ -20,6 +13,9 @@ interface Slide {
 export class CardComponent { slides = [
   {img: "../../../assets/portfolio/proyecto_1.jpg" },
   {img: "../../../assets/portfolio/proyecto_2.jpg"},
+  {img: "../../../assets/portfolio/proyecto_3.jpg"},
+  {img: "../../../assets/portfolio/proyecto_4.jpg"},
+  {img: "../../../assets/portfolio/proyecto_5.jpeg"},
 ];
 slideConfig = {"slidesToShow": 1, "slidesToScroll": 1,
  "lazyLoad": true,

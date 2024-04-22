@@ -51,7 +51,6 @@
 
 .profile-image-frame {
   width: 300px;
-  height: 200px;
   background-color: #ffffffa9;
   padding: 10px;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
@@ -59,16 +58,16 @@
 }
 
 .profile-image {
-  width: 95%;
-  height: 100%;
+  max-width: 95%;
+  height: 15vh; /* o height: calc(40vh - 20px); para considerar el padding */
   object-fit: cover;
   border-radius: 0px;
 }
 
 .cta-button {
   display: inline-block;
-  background-color: #ffffffa9;
-  color: #202020c0;
+  background-color: #ff990073;
+  color: #fff;
   font-weight: 300;
   padding: 10px 24px;
   border: none;
@@ -79,8 +78,8 @@
 }
 
 .cta-button:hover {
-  background-color: #ff990073;
-  color: #fff;
+  background-color: #ffffffa9 ;
+  color: #202020c0 ;
 }
 .about-me-title-container {
   display: flex;
@@ -169,3 +168,4 @@
   margin-left: -100px;
   }
 }
+
