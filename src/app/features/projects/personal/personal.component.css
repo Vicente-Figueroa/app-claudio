@@ -1,6 +1,4 @@
-
-
-.about-me-container {
+.personal-container {
     font-family: "Roboto", sans-serif;
     justify-content: center;
     overflow: hidden;
@@ -9,7 +7,7 @@
     max-height: 100vh;
   }
   
-  .about-me-container:before {
+  .personal-container:before {
     content: "";
     position: absolute;
     top: 0;
@@ -35,7 +33,7 @@
     }
   }
   
-  .about-me-content {
+  .personal-content {
     max-width: 600px;
     text-align: center;
     padding: 10px;
@@ -80,16 +78,16 @@
   }
   
   .cta-button:hover {
-    background-color: #ffffffa9 ;
-    color: #202020c0 ;
+    background-color: #ffffffa9;
+    color: #202020c0;
   }
-  .about-me-title-container {
+  .personal-title-container {
     display: flex;
     justify-content: flex-start;
     margin-bottom: 20px;
   }
   
-  .about-me-title-box {
+  .personal-title-box {
     background-color: #ffffffa9;
     padding: 10px 20px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
@@ -97,7 +95,7 @@
     margin-left: -10px;
   }
   
-  .about-me-title {
+  .personal-title {
     font-family: "Roboto", sans-serif;
     font-size: 30px;
     font-weight: 300;
@@ -105,27 +103,25 @@
     margin: -5px;
   }
   
-  .about-me-body {
+  .personal-body {
     display: flex;
     justify-content: center;
     position: relative;
-  
   }
   
-  .about-me-frame {
+  .personal-frame {
     background-color: #202020c0;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
     max-width: 400px;
     margin-right: -50px;
     margin-left: 70px;
-  
   }
   
-  .about-me {
+  .personal {
     font-family: "Merriweather", serif;
     font-size: 15px;
-    line-height: 1.6;
+    line-height: 1.4;
     color: #fff;
     margin-right: 50px;
     margin-left: -50px;
@@ -155,22 +151,19 @@
   }
   /* Media query para pantallas grandes */
   @media only screen and (min-width: 1024px) {
-    .about-me-content,
-    .about-me-container{
+    .personal-content,
+    .personal-container {
       width: 700px; /* Establece el ancho mínimo del 80% de la pantalla */
       max-width: none; /* Elimina el límite máximo de ancho */
       margin: 0 auto; /* Centra el contenedor horizontalmente */
-  
     }
   
-    .about-me{
+    .personal {
       font-size: initial;
-      font-size: 18.5px !important; /* Aumentar el tamaño del texto en pantallas grandes de forma forzosa */
-      margin-right: 50px;
-    margin-left: -100px;
-    line-height: 1.4;
-
+      font-size: 21px !important; /* Aumentar el tamaño del texto en pantallas grandes de forma forzosa */
+      margin-right: 30px;
+      margin-left: -100px;
+      line-height: 1;
     }
   }
-  
   

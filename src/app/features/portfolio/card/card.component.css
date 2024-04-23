@@ -44,3 +44,13 @@ h2 {
 
   border-radius: 10px;
 }
+@media only screen and (min-width: 1024px) {
+  ::ng-deep .slide img {
+    /* Set exact dimensions for consistent sizing */
+    width:250px;
+    height: 250px;
+    object-fit: cover;
+    /* Use margin instead of padding for clearer spacing */
+    margin: 10px;
+  }
+}

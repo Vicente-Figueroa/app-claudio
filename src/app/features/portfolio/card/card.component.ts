@@ -14,8 +14,8 @@ export class CardComponent { slides = [
   { img: "../../../assets/portfolio/proyecto_1.jpg", link: "proyectos/academia", title: "Academia de deep learning Bns Aires" },
   { img: "../../../assets/portfolio/proyecto_2.jpg", link: "proyectos/rubitsworks", title: "Plataforma de servicios Freelance" },
   { img: "../../../assets/portfolio/proyecto_3.jpg", link: "proyectos/cymasuite", title: "Sistema de Gestión Contable moderno" },
-  { img: "../../../assets/portfolio/proyecto_4.jpg", link: "https://example.com/proyecto-4", title: "Premio nominacion Defontana" },
-  { img: "../../../assets/portfolio/proyecto_5.jpeg", link: "https://example.com/proyecto-5", title: "Proyectos personales" }
+  { img: "../../../assets/portfolio/proyecto_4.jpg", link: "proyectos/defontana", title: "Premio nominacion Defontana" },
+  { img: "../../../assets/portfolio/proyecto_5.jpeg", link: "proyectos/personal", title: "Proyectos personales" }
 ];
 slideConfig = {"slidesToShow": 1, "slidesToScroll": 1,
  "lazyLoad": true,

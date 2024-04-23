@@ -1,15 +1,13 @@
-.contact-container {
+.defontana-container {
   font-family: "Roboto", sans-serif;
   justify-content: center;
   overflow: hidden;
   align-items: top;
   min-height: 80vh;
   max-height: 100vh;
-  overflow: hidden;
-  width: 95vw;
 }
 
-.contact-container:before {
+.defontana-container:before {
   content: "";
   position: absolute;
   top: 0;
@@ -35,13 +33,35 @@
   }
 }
 
-.contact-content {
+.defontana-content {
   max-width: 600px;
   text-align: center;
   padding: 10px;
   background-color: rgba(255, 153, 0, 0.3);
   backdrop-filter: blur(2px);
   border-radius: 8px;
+}
+
+.profile-image-container {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.profile-image-frame {
+  width: 300px;
+  background-color: #ffffffa9;
+  padding: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+.profile-image {
+  max-width: 95%;
+  height: 25vh; /* o height: calc(40vh - 20px); para considerar el padding */
+  object-fit: cover;
+  border-radius: 0px;
 }
 
 .cta-button {
@@ -54,7 +74,6 @@
   border-radius: 4px;
   font-size: 16px;
   cursor: pointer;
-  margin-top: 20px;
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 
@@ -62,22 +81,21 @@
   background-color: #ffffffa9;
   color: #202020c0;
 }
-.contact-title-container {
+.defontana-title-container {
   display: flex;
   justify-content: flex-start;
   margin-bottom: 20px;
 }
 
-.contact-title-box {
+.defontana-title-box {
   background-color: #ffffffa9;
   padding: 10px 20px;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
   border-radius: 3px;
-  margin-right: -10px;
   margin-left: -10px;
 }
 
-.contact-title {
+.defontana-title {
   font-family: "Roboto", sans-serif;
   font-size: 30px;
   font-weight: 300;
@@ -85,14 +103,13 @@
   margin: -5px;
 }
 
-.contact-body {
+.defontana-body {
   display: flex;
-  justify-content: flex-start;
-  margin-left: -10px;
-  margin-bottom: 20px;
+  justify-content: center;
+  position: relative;
 }
 
-.contact-frame {
+.defontana-frame {
   background-color: #202020c0;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
   border-radius: 8px;
@@ -101,13 +118,13 @@
   margin-left: 70px;
 }
 
-.contact {
+.defontana {
   font-family: "Merriweather", serif;
-  font-size: 17px;
-  line-height: 1.6;
+  font-size: 15px;
+  line-height: 1.4;
   color: #fff;
   margin-right: 50px;
-  margin-left: 10px;
+  margin-left: -50px;
   text-align: justify;
 }
 .highlight {
@@ -134,41 +151,18 @@
 }
 /* Media query para pantallas grandes */
 @media only screen and (min-width: 1024px) {
-  .contact-content,
-  .contact-container {
+  .defontana-content,
+  .defontana-container {
     width: 700px; /* Establece el ancho mínimo del 80% de la pantalla */
+    max-width: none; /* Elimina el límite máximo de ancho */
     margin: 0 auto; /* Centra el contenedor horizontalmente */
-    
-  }
-  .contact-body{
-    display: flex;
-    justify-content: flex-end;
   }
 
-  .contact {
-
+  .defontana {
     font-size: initial;
-    font-size: 19px !important; /* Aumentar el tamaño del texto en pantallas grandes de forma forzosa */
+    font-size: 21px !important; /* Aumentar el tamaño del texto en pantallas grandes de forma forzosa */
+    margin-right: 30px;
+    margin-left: -100px;
+    line-height: 1;
   }
-  .contact-title-container {
-    display: flex;
-    justify-content: flex-start;
-    margin-bottom: 0px;
-    margin-bottom: -5px;
-  }
-}
-
-
-.form-container {
-  margin-top: 20px;
-  margin-bottom: 20px;
-  display: flex;
-  justify-content: center;
-}
-
-.form-frame {
-  /*box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-  background-color: #ffffffa9;*/
-  padding: 10px;
-  border-radius: 8px;
 }

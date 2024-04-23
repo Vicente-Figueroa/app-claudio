@@ -189,11 +189,12 @@
 }
 /* Media query para pantallas grandes */
 @media only screen and (min-width: 1024px) {
+
   .onboarding-container,
   .about-me,
   .experience {
     font-size: initial;
-    font-size: 21px !important; /* Aumentar el tamaño del texto en pantallas grandes de forma forzosa */
+    font-size: 17px !important; /* Aumentar el tamaño del texto en pantallas grandes de forma forzosa */
   }
   
 .profile-image-frame {
@@ -204,12 +205,11 @@
 .profile-image {
   padding-left: 80px;
   width: 95%;
-  height: 115%;
+  height: 100%;
 }
 .profile-image-container {
   justify-content: flex-start;
-}
-.experience {
-  margin-bottom: -5px;
+  margin-bottom: -20px;
+  margin-top: 5px;
 }
 }
